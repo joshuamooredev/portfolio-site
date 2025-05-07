@@ -1,0 +1,150 @@
+.hero {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+  
+  
+  .content {
+    flex: 0 0 60%;
+  }
+  
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    color: transparent;
+    background-image: url("/images/hero/neon-background.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: titleGlowAnim 30s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+    filter: brightness(3.0);
+  }
+  @keyframes titleGlowAnim {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+  
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 90%;
+  }
+  
+  .imageBox {
+    flex: 0 0 35%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  .neonWrapper {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+  
+  .image {
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+    filter: saturate(0) brightness(0.9);
+  }
+
+  .neonWrapper::before,
+  .neonWrapper::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
+    );
+    animation: spin 6s linear infinite;
+    z-index: -1;
+  }
+  
+  .neonWrapper::before {
+    width: 190px;
+    height: 190px;
+    top: 15px;
+    left: 15px;
+  }
+  
+  .neonWrapper::after {   
+    filter: blur(20px);
+    opacity: 0.7;
+    width: 190px;
+    height: 190px;
+    top: 15px;
+    left: 15px;
+  }
+
+  .highlight {
+    font-weight: bold;
+   
+  }
+  
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .imageBox {
+      order: -1;
+    }
+  
+    .content {
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      max-width: 100%;
+    }
+  }
+  
