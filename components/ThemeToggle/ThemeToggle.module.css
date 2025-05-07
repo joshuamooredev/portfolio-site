@@ -1,0 +1,22 @@
+.toggle {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 9999px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 50;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .toggle:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+  }
+  

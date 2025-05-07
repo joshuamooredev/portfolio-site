@@ -3,8 +3,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    background-color: black;
-    color: white;
+    background-color: var(--navbar-background);
+    color: var(--navbar-foreground);
+    
   }
   
   .name {
@@ -22,11 +23,11 @@
   
   .navItem a {
     text-decoration: none;
-    color: #ccc;
+    color: var(--navbar-link);
     transition: color 0.2s ease;
   }
   
   .navItem a:hover {
-    color: #fff;
+    color: var(--navbar-link-hover);
   }
   
