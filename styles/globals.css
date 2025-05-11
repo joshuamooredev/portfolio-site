@@ -3,7 +3,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  --card-background: #f9f9f9;
+  --card-foreground: #171717;
+  --image-placeholder: #e5e5e5;
+  --tag-background: #e0e7ff;
+  --tag-color: #1e40af;
+  --link-color: #2563eb;
 }
+
 
 @theme inline {
   --color-background: var(--background);
@@ -20,8 +28,14 @@
 :root[data-theme="dark"] {
   --background: #0e0e0e;
   --foreground: #ededed;
-}
 
+  --card-background: #1a1a1a;
+  --card-foreground: #f5f5f5;
+  --image-placeholder: #333;
+  --tag-background: #1e293b;
+  --tag-color: #60a5fa;
+  --link-color: #93c5fd;
+}
 html,
 body {
   background: var(--background);
