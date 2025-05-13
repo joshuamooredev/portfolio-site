@@ -2,7 +2,7 @@
     background: var(--card-background);
     color: var(--card-foreground);
     padding: 1rem;
-    border-radius: 12px;
+    border-radius: 10px;
     width: 320px;
     height: 460px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
@@ -50,5 +50,49 @@
     text-decoration: none;
     font-size: 0.8rem;
     margin-right: 0.5rem;
+  }
+  @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+  
+  .neonWrapper {
+    position: relative;
+    width: fit-content;
+    border-radius: 12px;
+    z-index: 0;
+  }
+  
+  .neonWrapper::before,
+  .neonWrapper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background-image: linear-gradient(
+      var(--rotate),
+      #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
+    );
+    animation: spin 6s linear infinite;
+    z-index: -1;
+    transform: scaleX(1.03) scaleY(1.02); /* narrower width scale, slightly more vertical */
+
+  }
+  
+  .neonWrapper::after {
+    filter: blur(10px);     /* ↓ reduce blur */
+    opacity: 0.5;           /* ↓ reduce intensity */
+  }  
+  
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
   }
   
