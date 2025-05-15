@@ -1,20 +1,31 @@
 .projects {
-    padding: 2rem;
-    color: var(--foreground);
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    text-align: left;
-  }
-  
+  padding: 2rem 1rem;
+  color: var(--foreground);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between; /* Default: space between */
+}
+
+/* On medium and smaller screens, center the cards */
+@media (max-width: 768px) {
   .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    justify-content: center;
   }
-  
+
+  .title {
+    text-align: center;
+  }
+}

@@ -1,6 +1,7 @@
 .hero {
     width: 100%;
     padding: 4rem 2rem;
+    margin-top: 40px;
   }
   
   .container {
@@ -74,7 +75,7 @@
     object-fit: cover;
     z-index: 1;
     position: relative;
-    filter: saturate(0) brightness(1);
+    filter: saturate(0) brightness(1.2);
   }
 
   .neonWrapper::before,
@@ -147,4 +148,6 @@
       max-width: 100%;
     }
   }
+  
+
   

@@ -1,11 +1,29 @@
 .navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navbar-background);
+  color: var(--navbar-foreground);
+
+  /* Glass effect additions */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* for Safari support */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+
+  .navItems{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    background-color: var(--navbar-background);
-    color: var(--navbar-foreground);
-    
+    width: 100%;
   }
   
   .name {
@@ -29,5 +47,35 @@
   
   .navItem a:hover {
     color: var(--navbar-link-hover);
+  }
+  .navItem a {
+    position: relative;
+    padding-bottom: 4px;
+  }
+  
+  .navItem a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to right, #5ddcff, #3c67e3, #4e00c2);
+    transition: width 0.4s ease;
+  }
+  
+  .navItem a:hover::after {
+    width: 100%;
+  }
+  
+  .navItem a {
+    text-decoration: none;
+    color: var(--foreground);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navItem a:hover {
+    color: var(--link-color); /* or a custom bright color */
+    transform: scale(1.05);
   }
   

@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: space-between;
     transition: background 0.4s ease, color 0.4s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
   
   .imagePlaceholder {
@@ -94,5 +95,13 @@
     100% {
       --rotate: 360deg;
     }
+  }
+  
+  .neonWrapper {
+    transition: transform 0.3s ease;
+  }
+  
+  .neonWrapper:hover {
+    transform: scale(1.05);
   }
   
