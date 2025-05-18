@@ -6,7 +6,7 @@ import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
 import Projects from "@/sections/Projects/Projects";
 import Footer from "@/sections/Footer/Footer";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-
+import About from "@/sections/About/About";
 
 export default function Home() {
   return (
@@ -21,9 +21,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-    
       <Projects />
-      <Footer/>
+      <About />
+      <Footer />
       <ThemeToggle />
     </>
   );
