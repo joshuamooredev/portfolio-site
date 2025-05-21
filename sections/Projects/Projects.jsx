@@ -4,26 +4,34 @@ import Card from "@/components/Card/Card";
 
 const projects = [
   {
-    title: "Portfolio Website",
-    description: "Personal portfolio site showcasing my work.",
+    title: "Impaction",
+    description:
+      "A platform gamifying real-world impact through blockchain tech.",
+    tags: ["React", "GSAP", "Three.js"],
+    liveDemo: "https://impaction.global",
+    github: "https://github.com/Joshua551502/ImpactSite",
+    image: "/images/projects/impaction_site_image.png",
+    imagePosition: "top",
+  },
+  {
+    title: "MetaFundWe",
+    description:
+      "A donation system built to verify and reward charitable giving.",
     tags: ["React", "CSS", "Three.js"],
     liveDemo: "https://your-portfolio-demo.com",
-    github: "https://github.com/your-portfolio-repo"
+    github: "https://github.com/MetaFundWe-Inc/cause_onboarding_metafundwe_v1",
+    image: "/images/projects/metafundwe_site_image.png",
+    imagePosition: "top",
   },
   {
-    title: "Weather App",
-    description: "A weather forecasting app using OpenWeatherMap API.",
-    tags: ["React", "API", "Tailwind"],
-    liveDemo: "https://your-weather-demo.com",
-    github: "https://github.com/your-weather-repo"
-  },
-  {
-    title: "Task Manager",
-    description: "A productivity tool to manage daily tasks.",
-    tags: ["Next.js", "MongoDB", "CSS"],
+    title: "Portfolio Site",
+    description: "My personal site to showcase skills and selected work.",
+    tags: ["Next.js", "Three.js", "CSS"],
     liveDemo: "https://your-taskmanager-demo.com",
-    github: "https://github.com/your-taskmanager-repo"
-  }
+    github: "https://github.com/Joshua551502/portfolio-site",
+    image: "/images/projects/portfolio_site_image.png",
+    imagePosition: "top",
+  },
 ];
 
 export default function Projects() {
@@ -39,6 +47,8 @@ export default function Projects() {
             tags={project.tags}
             liveDemo={project.liveDemo}
             github={project.github}
+            image={project.image}
+            imagePosition={project.imagePosition}
           />
         ))}
       </div>

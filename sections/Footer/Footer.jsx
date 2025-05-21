@@ -13,7 +13,7 @@ export default function Footer() {
         <ul className={styles.socialList}>
           <li>
             <div className={styles.neonWrapper}>
-              <a href="mailto:your@email.com" target="_blank" rel="noreferrer">
+              <a href="mailto:joshua55150.dev@gmail.com" target="_blank" rel="noreferrer">
                 <i className={`fas fa-envelope ${styles.icon}`}></i>
               </a>
             </div>
@@ -21,7 +21,7 @@ export default function Footer() {
           <li>
             <div className={styles.neonWrapper}>
               <a
-                href="https://github.com/yourgithub"
+                href="https://github.com/Joshua551502"
                 target="_blank"
                 rel="noreferrer"
               >
