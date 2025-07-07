@@ -21,7 +21,7 @@ export default function Footer() {
           <li>
             <div className={styles.neonWrapper}>
               <a
-                href="https://github.com/Joshua551502"
+                href="https://github.com/joshuamooredev/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -32,7 +32,7 @@ export default function Footer() {
           <li>
             <div className={styles.neonWrapper}>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/joshuamooredev/"
                 target="_blank"
                 rel="noreferrer"
               >

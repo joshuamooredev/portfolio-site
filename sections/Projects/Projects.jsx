@@ -18,7 +18,7 @@ const projects = [
     description:
       "A donation system built to verify and reward charitable giving.",
     tags: ["React", "CSS", "Three.js"],
-    liveDemo: "https://your-portfolio-demo.com",
+    liveDemo: "https://metafundwe.com/",
     github: "https://github.com/MetaFundWe-Inc/cause_onboarding_metafundwe_v1",
     image: "/images/projects/metafundwe_site_image.png",
     imagePosition: "top",

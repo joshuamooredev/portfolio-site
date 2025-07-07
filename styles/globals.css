@@ -13,7 +13,7 @@
   --link-color: #2563eb;
   --icon-color: #1a1a1a; 
   --icon-hover-color: #000000;
-  --icon-bg: #f0f0f0;
+  --icon-bg: #ffffff;
 }
 
 
@@ -29,6 +29,9 @@
   --foreground: #171717;
 
   --navbar-border: rgba(0, 0, 0, 0.05);
+  --button: #f3f3f3;
+  --button-hover: #e7e7e7;
+  --rotate-icon: #e0e0e0;
 }
 
 :root[data-theme="dark"] {
@@ -45,7 +48,10 @@
   --icon-color: #d6f2ff;
   --icon-hover-color: #ffffff;
   --icon-bg: #0d1117;
+  --rotate-icon: #000;
   --navbar-border: rgba(255, 255, 255, 0.1);
+  --button: #1d1d1d;
+  --button-hover: #252525;
 }
 html,
 body {
@@ -68,4 +74,11 @@ html, body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none; /* Chrome/Safari */
+}
+
+.geist-bold {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }

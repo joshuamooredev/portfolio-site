@@ -17,10 +17,21 @@ export default function Home() {
           name="description"
           content="Portfolio of Joshua Moore – a front-end developer crafting sleek, responsive web experiences with precision using React, Next.js, and modern design tools."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="/favicon-light.svg"
+          type="image/svg+xml"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          href="/favicon-dark.svg"
+          type="image/svg+xml"
+          media="(prefers-color-scheme: dark)"
+        />
       </Head>
       <Navbar />
-      <Hero />
+      <Hero/>
       <Projects />
       <About />
       <Footer />

@@ -22,7 +22,7 @@ export default function Card({ title, description, tags, liveDemo, github, image
         </div>
         <div className={styles.links}>
           <a href={liveDemo} target="_blank" rel="noopener noreferrer">Live Demo</a> •{" "}
-          <a href={github} target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href={github} target="_blank" rel="noopener noreferrer">{" "} GitHub</a>
         </div>
       </div>
     </div>

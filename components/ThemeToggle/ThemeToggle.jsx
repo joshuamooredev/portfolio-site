@@ -17,11 +17,17 @@ export default function ThemeToggle() {
     setTheme(newTheme);
     document.documentElement.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme);
+
+    window.dispatchEvent(new CustomEvent("themechange", { detail: newTheme }));
   };
 
   return (
-    <button className={styles.toggle} onClick={toggleTheme} aria-label="Toggle Theme">
-      {theme === "light" ? "☀️" : "🌙"}
+    <button
+      className={styles.toggle}
+      onClick={toggleTheme}
+      aria-label="Toggle Theme"
+    >
+      {theme === "light" ? "🌙" : "☀️"}
     </button>
   );
 }
