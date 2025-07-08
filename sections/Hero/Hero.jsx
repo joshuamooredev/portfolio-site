@@ -7,7 +7,7 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   const [theme, setTheme] = useState("light");
 
- useEffect(() => {
+  useEffect(() => {
     // 1️⃣ first read
     setTheme(localStorage.getItem("theme") || "light");
 
@@ -50,6 +50,17 @@ export default function Hero() {
             <button id={styles.linkedin}>View LinkedIn</button>
             <button id={styles.github}>View GitHub</button>
           </div> */}
+
+          
+        <div className={styles.neonWrapper}>
+          <Image
+            src="/images/hero/hero-profile.png"
+            alt="Developer profile photo"
+            width={180}
+            height={180}
+            className={styles.image}
+          />
+        </div>
           <div className={styles.socialMedia}>
             <ul className={styles.socialList}>
               <li>
@@ -95,17 +106,7 @@ export default function Hero() {
             </ul>
           </div>
         </div>
-        <div className={styles.imageBox}>
-          <div className={styles.neonWrapper}>
-            <Image
-              src="/images/hero/hero-profile.png"
-              alt="Developer profile photo"
-              width={180}
-              height={180}
-              className={styles.image}
-            />
-          </div>
-        </div>
+
       </div>
     </section>
   );

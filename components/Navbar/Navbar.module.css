@@ -29,6 +29,9 @@
     font-weight: bold;
     font-size: 1.125rem;
   }
+    .name img{
+      height: 2rem;
+    }
   
   .navList {
     display: flex;

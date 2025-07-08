@@ -89,13 +89,7 @@
 
   }
   
-  .imageBox {
-  
-    flex: 0 0 15%;
-    display: flex;
-    justify-content: center;
-  }
-  
+
   @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
@@ -110,15 +104,17 @@
     justify-content: center;
     align-items: center;
     z-index: 0;
+ 
+
   }
   
   .image {
     border-radius: 50%;
     object-fit: cover;
-    z-index: 1;
-    position: relative;
-    width: 180px;
-    height: 180px;
+
+
+    width: 185px;
+    height: 185px;
     object-position: 80% 80%;
 
   }
@@ -263,7 +259,9 @@
     border-radius: 50%;
     background-image: linear-gradient(
       var(--rotate),
-      #0077B5 0%, #000 70%
+         #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
     );
     animation: spin 6s linear infinite;
     z-index: -1;
@@ -293,7 +291,9 @@
   border-radius: 50%;
   background-image: linear-gradient(
     var(--rotate),
-     #00a6ff 0%, var(--rotate-icon) 70%
+        #5ddcff,
+      #3c67e3 43%,
+      #4e00c2
   );
   animation: spin 6s linear infinite;
   z-index: -1;
