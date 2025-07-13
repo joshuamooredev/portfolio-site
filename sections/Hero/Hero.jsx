@@ -46,10 +46,6 @@ export default function Hero() {
             Comfortable with <span>React</span> and currently learning more
             about Web3.
           </p>
-          {/* <div className={styles.buttons}>
-            <button id={styles.linkedin}>View LinkedIn</button>
-            <button id={styles.github}>View GitHub</button>
-          </div> */}
 
           
         <div className={styles.neonWrapper}>

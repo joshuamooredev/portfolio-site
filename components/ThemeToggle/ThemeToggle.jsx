@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Sun, Moon } from "lucide-react";
 import styles from "./ThemeToggle.module.css";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     const saved = localStorage.getItem("theme") || "light";
@@ -27,7 +28,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       aria-label="Toggle Theme"
     >
-      {theme === "light" ? "🌙" : "☀️"}
+      {theme === "light" ? <Sun size={22} /> : <Moon size={22} />}
     </button>
   );
 }

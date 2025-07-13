@@ -81,3 +81,8 @@
     transform: scale(1.05);
   }
   
+    @media (max-width: 560px) {
+    .name img{
+      height: 1.5rem;
+    }
+    }

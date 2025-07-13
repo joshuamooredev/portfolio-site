@@ -9,7 +9,7 @@
   
   .footerNeon {
     position: relative;
-    padding: 3rem 1rem;
+    padding: 3.2rem 1rem;
     margin-top: 4rem;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -65,7 +65,7 @@
   .socialList li a {
     width: 58px;
     height: 58px;
-    background-color: var(--icon-bg); /* ← replaced hardcoded value */
+    background-color: var(--icon-bg);
     text-align: center;
     line-height: 58px;
     font-size: 22px;
@@ -133,7 +133,7 @@
   }
   
   .footerNeon {
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     margin-top: 4rem;
     background: linear-gradient(135deg, #2d343d, #002558, #60687a);
     border-top: 1px solid rgba(255, 255, 255, 0.05);

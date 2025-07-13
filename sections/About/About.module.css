@@ -2,7 +2,6 @@
   padding: 2rem 2rem;
   max-width: 1200px;
   margin: 1rem auto;
-
   border-radius: 16px;
   position: relative;
   font-family: "Geist";
@@ -78,6 +77,11 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(8px);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.card:last-child {
+  margin-bottom: 0;
 }
 
 .card:hover {
@@ -117,3 +121,18 @@
   font-weight: 700;
   color: var(--foreground);
 }
+
+  @media (max-width: 560px) {
+    .title {
+      font-size: 2rem;
+
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      color: var(--foreground);
+      opacity: 0.7;
+      margin-top: 0.4rem;
+      position: relative;
+  }
+  }
