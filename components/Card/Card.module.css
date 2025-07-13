@@ -1,8 +1,8 @@
 .card {
     background: var(--card-background);
     color: var(--card-foreground);
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 1.5rem;
+    border-radius: 20px;
     width: 320px;
     height: 460px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
@@ -11,6 +11,7 @@
     justify-content: space-between;
     transition: background 0.4s ease, color 0.4s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    font-family: "Geist";
   }
   
   .imagePlaceholder {
@@ -70,7 +71,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 12px;
+    border-radius: 24px;
     background-image: linear-gradient(
       var(--rotate),
       #5ddcff,
@@ -79,7 +80,7 @@
     );
     animation: spin 6s linear infinite;
     z-index: -1;
-    transform: scaleX(1.03) scaleY(1.02); /* narrower width scale, slightly more vertical */
+    transform: scaleX(1.02) scaleY(1.01); /* narrower width scale, slightly more vertical */
 
   }
   

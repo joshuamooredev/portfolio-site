@@ -1,23 +1,29 @@
 .projects {
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   color: var(--foreground);
   max-width: 1200px;
   margin: 0 auto;
+
 }
 
 .title {
   font-size: 1.8rem;
+ font-family: 'Geist';
   font-weight: bold;
   margin-bottom: 1.5rem;
-  text-align: left;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .cardContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between; /* Default: space between */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  justify-items: center;
+  align-items: stretch;
 }
+
+
 
 /* On medium and smaller screens, center the cards */
 @media (max-width: 768px) {

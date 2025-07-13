@@ -13,11 +13,12 @@
     margin-top: 4rem;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
     overflow: hidden;
     z-index: 0;
     text-align: center;
     color: #eee;
+      font-family: "Geist";
   }
   
   .footerNeon::before,
@@ -134,7 +135,7 @@
   .footerNeon {
     padding: 2rem 1rem;
     margin-top: 4rem;
-    background: linear-gradient(135deg, #0b0e12, #1f2937, #111827);
+    background: linear-gradient(135deg, #2d343d, #002558, #60687a);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     color: #d6f2ff;
   }
@@ -200,7 +201,7 @@
   
   .neonWrapper::after {
     filter: blur(16px);
-    opacity: 0.6;
+    opacity: 0.5;
     width: 70px;
     height: 70px;
     top: 5px;

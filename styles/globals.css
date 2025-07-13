@@ -32,6 +32,8 @@
   --button: #f3f3f3;
   --button-hover: #e7e7e7;
   --rotate-icon: #e0e0e0;
+  --description: #000000;
+ --description-span: #3c67e3;
 }
 
 :root[data-theme="dark"] {
@@ -52,6 +54,8 @@
   --navbar-border: rgba(255, 255, 255, 0.1);
   --button: #1d1d1d;
   --button-hover: #252525;
+    --description: #958F87;
+      --description-span: #ededed;
 }
 html,
 body {
